@@ -19,6 +19,7 @@ public class TopicController {
 
     @GetMapping("getAllTopics")
     public ResponseEntity<List<Topic>> getAllDailyTasks() {
+        int a=10;
         return topicService.getAllDailyTasks();
     }
 
