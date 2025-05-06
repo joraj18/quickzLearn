@@ -17,10 +17,9 @@ public class TopicController {
     @Autowired
     TopicService topicService;
 
-    @GetMapping("getAllTopics")
+    @GetMapping("topics")
     public ResponseEntity<List<Topic>> getAllDailyTasks() {
-        int a=10;
-        return topicService.getAllDailyTasks();
+        return topicService.getAllTopic();
     }
 
 }

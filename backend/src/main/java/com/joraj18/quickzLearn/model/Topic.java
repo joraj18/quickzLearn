@@ -14,6 +14,6 @@ public class Topic {
     private Integer topicId;
     private String topicTitle;
     private Character status;
-
+    private Integer daysLeft;
 
 }

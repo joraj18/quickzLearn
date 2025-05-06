@@ -14,7 +14,7 @@ public class TopicService {
     @Autowired
     TopicDao topicDao;
 
-    public ResponseEntity<List<Topic>> getAllDailyTasks() {
+    public ResponseEntity<List<Topic>> getAllTopic() {
         return new ResponseEntity<>(topicDao.findAll(), HttpStatus.OK);
     }
 }
